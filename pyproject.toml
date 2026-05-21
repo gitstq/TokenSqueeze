@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tokensqueeze"
+version = "1.0.0"
+description = "轻量级LLM Token智能压缩工具 - Lightweight LLM Token Compression Tool"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "TokenSqueeze Team", email = "hello@tokensqueeze.dev"}
+]
+keywords = ["llm", "token", "compression", "ai", "claude", "cursor", "codex", "cli", "tool"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Tools",
+    "Topic :: System :: Systems Administration",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.8"
+
+[project.scripts]
+tokensqueeze = "tokensqueeze:main"
+tsq = "tokensqueeze:main"
+
+[project.urls]
+Homepage = "https://github.com/gitstq/TokenSqueeze"
+Documentation = "https://github.com/gitstq/TokenSqueeze#readme"
+Repository = "https://github.com/gitstq/TokenSqueeze"
+Issues = "https://github.com/gitstq/TokenSqueeze/issues"
+
+[tool.setuptools]
+py-modules = ["tokensqueeze"]
